@@ -14,6 +14,7 @@ function App() {
         console.log(res.data);
       });
       setLocation("");
+      
     }
   };
 
@@ -23,7 +24,7 @@ function App() {
         <input
           value={location}
           type="text"
-          placeholder="enter the city name"
+          placeholder="Enter the city name"
           onChange={(event) => setLocation(event.target.value)}
           onKeyPress={searchLocation}
         />
