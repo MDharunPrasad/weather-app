@@ -12,6 +12,10 @@ function App() {
       axios.get(url).then((res) => {
         setData(res.data);
         console.log(res.data);
+      })
+      .catch((error) => {
+        alert("Location not found. Please enter a valid city name.");
+        console.error("Error fetching weather data:", error);
       });
       setLocation("");
       
