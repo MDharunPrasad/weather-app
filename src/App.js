@@ -17,7 +17,7 @@ function App() {
           console.log(res.data);
         })
         .catch((error) => {
-          alert("Location not found. Please enter a valid city name.");
+          alert("Location not found. Please enter a valid city name again.");
           console.error("Error fetching weather data:", error);
         });
       setLocation("");
